@@ -1,0 +1,500 @@
+/* Базові змінні та налаштування */
+:root {
+    --bg-dark: #0f1219;
+    --bg-card: #181d27;
+    --bg-card-hover: #222836;
+    --primary-blue: #2970ff;
+    --primary-hover: #1e5ce6;
+    --text-main: #ffffff;
+    --text-muted: #8b92a5;
+    --border-color: #293040;
+    --font-main: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ================== Кнопки ================== */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: none;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background-color: var(--primary-blue);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+}
+
+.btn-outline:hover {
+    border-color: var(--primary-blue);
+}
+
+.btn-full {
+    width: 100%;
+}
+
+.btn-white {
+    background-color: #fff;
+    color: var(--primary-blue);
+}
+.btn-white:hover {
+    background-color: #f0f0f0;
+}
+
+/* ================== Шапка сайту ================== */
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.logo span { color: var(--primary-blue); }
+
+.nav-links {
+    display: none;
+    gap: 24px;
+    font-size: 14px;
+    color: var(--text-muted);
+}
+.nav-links a:hover { color: var(--text-main); }
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: var(--text-main);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* ================== Hero Section ================== */
+.hero {
+    padding: 60px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.hero-text p {
+    color: var(--text-muted);
+    margin-bottom: 32px;
+    font-size: 16px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    background-color: var(--bg-card);
+    border-radius: 16px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 110%;
+    height: 110%;
+    object-fit: cover; /* Картинка не обрізається, а вписується */
+    padding: 20px;
+}
+
+/* ================== Переваги ================== */
+.features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.feature-card {
+    background-color: var(--bg-card);
+    padding: 24px 20px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.feature-icon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 12px;
+}
+.feature-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.feature-card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.feature-card p {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+/* ================== Конфігуратор ================== */
+.section-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+    margin-top: 60px;
+}
+
+.configurator-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.config-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.config-item {
+    background-color: var(--bg-card);
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.config-item-info span {
+    display: block;
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+}
+
+.config-item-info strong { font-size: 14px; }
+
+.config-summary {
+    background-color: var(--bg-card);
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    height: fit-content;
+}
+
+.config-summary h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.price-total {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.specs-mini {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    font-size: 14px;
+    color: var(--text-muted);
+}
+.specs-mini span {
+    display: block;
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+/* ================== Комплектуючі ================== */
+.components-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.component-card {
+    background-color: var(--bg-card);
+    padding: 24px 20px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.component-card:hover {
+    background-color: var(--bg-card-hover);
+    border-color: var(--primary-blue);
+}
+
+.component-icon {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(41, 112, 255, 0.1); /* Легкий синій фон для іконки */
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px auto;
+}
+.component-icon img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.component-card h4 {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.component-card span {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+/* ================== Готові збірки ================== */
+.prebuilts-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.prebuilt-card {
+    background-color: var(--bg-card);
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.prebuilt-img {
+    height: 220px;
+    background-color: #202634;
+    overflow: hidden;
+}
+
+.prebuilt-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Картинка заповнює весь блок */
+}
+
+.prebuilt-info {
+    padding: 24px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.prebuilt-info h3 { margin-bottom: 12px; }
+
+.prebuilt-specs {
+    color: var(--text-muted);
+    font-size: 13px;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+.prebuilt-specs li { margin-bottom: 6px; }
+
+.prebuilt-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.prebuilt-price {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* ================== Відгуки ================== */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.review-card {
+    background-color: var(--bg-card);
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--border-color);
+    overflow: hidden;
+}
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.review-card p {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+/* ================== Call to Action ================== */
+.cta-banner {
+    background-color: var(--primary-blue);
+    border-radius: 16px;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.cta-banner h2 { font-size: 24px; }
+.cta-banner p { margin-top: 8px; color: rgba(255, 255, 255, 0.8); }
+
+/* ================== Підвал (Footer) ================== */
+footer {
+    background-color: var(--bg-card);
+    border-top: 1px solid var(--border-color);
+    padding: 40px 0;
+    margin-top: 60px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+
+.footer-desc {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.footer-col h4 {
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.footer-col ul li { margin-bottom: 12px; }
+.footer-col ul a {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+.footer-col ul a:hover { color: var(--text-main); }
+
+/* ================== Адаптивність (Десктоп) ================== */
+@media (min-width: 768px) {
+    .nav-links { display: flex; }
+    .menu-toggle { display: none; }
+    .header-actions .btn { display: inline-block; }
+    
+    .hero { grid-template-columns: 1fr 1fr; }
+    .hero-text h1 { font-size: 48px; }
+    .hero-image { height: 400px; }
+
+    .features { grid-template-columns: repeat(4, 1fr); }
+    
+    .configurator-grid { grid-template-columns: 2fr 1fr; }
+    
+    .components-grid { grid-template-columns: repeat(4, 1fr); }
+    
+    .prebuilts-grid { grid-template-columns: repeat(3, 1fr); }
+    
+    .reviews-grid { grid-template-columns: repeat(3, 1fr); }
+
+    .cta-banner { 
+        flex-direction: row; 
+        justify-content: space-between;
+        padding: 40px 60px;
+        text-align: left;
+    }
+    .cta-banner p { margin-top: 4px; }
+
+    .footer-grid { grid-template-columns: 2fr 1fr 1fr 1fr; }
+}

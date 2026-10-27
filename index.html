@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NexPC - Збери ПК своєї мрії</title>
+        <!-- Підключення шрифтів -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Підключення вашого окремого файлу стилів -->
+        <link rel="stylesheet" href="index_style.css">
+    </head>
+<body>
+
+    <!-- Шапка сайту -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo"><span>◆</span> NexPC</a>
+            <nav class="nav-links">
+                <a href="C:\Users\vscode\veb_design\index.html">Головна</a>
+                <a href="C:\Users\vscode\veb_design\empty\catalog.html">Каталог</a>
+                <a href="C:\Users\vscode\veb_design\empty\prebuild.html">Готові збірки</a>
+                <a href="C:\Users\vscode\veb_design\empty\about.html">Про нас</a>
+                <a href="C:\Users\vscode\veb_design\empty\blog.html">Блог</a>
+                <a href="C:\Users\vscode\veb_design\empty\contacts.html">Контакти</a>
+            </nav>
+            <div class="header-actions">
+                <!-- Тепер це посилання, стилізоване під кнопку -->
+                <a href="C:\Users\vscode\veb_design\empty\configurator.html" class="btn btn-primary" style="display: none;">Зібрати ПК</a>
+                <button class="menu-toggle">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <!-- Головний екран (Hero) -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Збери ПК своєї мрії</h1>
+                <p>Обирай комплектуючі, перевіряй сумісність і замовляй бездоганну збірку. Ми подбаємо про унікальність твого замовлення.</p>
+                <div class="hero-buttons">
+                    <!-- Замінено на тег <a> -->
+                    <a href="C:\Users\vscode\veb_design\empty\configurator.html" class="btn btn-primary">Зібрати ПК</a>
+                    <a href="C:\Users\vscode\veb_design\empty\catalog.html" class="btn btn-outline">Переглянути каталог</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Картинка головного ПК -->
+                <img src="C:\Users\vscode\veb_design\images\hero-main-pc.jpg" alt="Потужний ігровий ПК">
+            </div>
+        </section>
+
+        <!-- Переваги -->
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon"><img src="C:\Users\vscode\veb_design\images\kolo.svg" alt="Check"></div>
+                <h3>Перевірка сумісності</h3>
+                <p>Наш сервіс автоматично перевіряє деталі.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><img src="C:\Users\vscode\veb_design\images\kolo.svg" alt="Power"></div>
+                <h3>Розрахунок потужності</h3>
+                <p>Обирай оптимальний блок живлення.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><img src="C:\Users\vscode\veb_design\images\kolo.svg" alt="Price"></div>
+                <h3>Прозорі ціни</h3>
+                <p>Вартість збірки оновлюється в реальному часі.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><img src="C:\Users\vscode\veb_design\images\kolo.svg" alt="Delivery"></div>
+                <h3>Гарантія та доставка</h3>
+                <p>Збірка, тестування та надійна доставка.</p>
+            </div>
+        </section>
+
+        <!-- Конфігуратор -->
+        <h2 class="section-title">Конфігуратор ПК</h2>
+        <section class="configurator-grid">
+            <div class="config-list">
+                <div class="config-item">
+                    <div class="config-item-info">
+                        <span>Процесор</span>
+                        <strong>AMD Ryzen 5 5600</strong>
+                    </div>
+                    <span>7 130 ₴</span>
+                </div>
+                <div class="config-item">
+                    <div class="config-item-info">
+                        <span>Відеокарта</span>
+                        <strong>NVIDIA RTX 4060 8GB</strong>
+                    </div>
+                    <span>18 900 ₴</span>
+                </div>
+                <div class="config-item">
+                    <div class="config-item-info">
+                        <span>Материнська плата</span>
+                        <strong>ASUS B550M-K (AM4)</strong>
+                    </div>
+                    <span>3 400 ₴</span>
+                </div>
+                <div class="config-item">
+                    <div class="config-item-info">
+                        <span>Оперативна пам'ять</span>
+                        <strong>DDR4 32GB 3200 MHz</strong>
+                    </div>
+                    <span>2 800 ₴</span>
+                </div>
+            </div>
+
+            <div class="config-summary">
+                <h3>Ваша збірка</h3>
+                <div class="price-total">49 100 ₴</div>
+                <div class="specs-mini">
+                    <div>
+                        <span>Споживання</span>
+                        <strong>255 Вт</strong>
+                    </div>
+                    <div>
+                        <span>Рекомендований БЖ</span>
+                        <strong>650 Вт</strong>
+                    </div>
+                </div>
+                <!-- Замінено на тег <a> для переходу в кошик -->
+                <a href="C:\Users\vscode\veb_design\empty\cart.html" class="btn btn-primary btn-full">Додати збірку до кошика</a>
+            </div>
+        </section>
+
+        <!-- Комплектуючі -->
+        <h2 class="section-title">Комплектуючі</h2>
+        <section class="components-grid">
+            <!-- Додав посилання навколо карток, щоб при кліку на категорію був перехід -->
+            <a href="catalog.html?category=cpu" style="display: block;">
+                <div class="component-card">
+                    <div class="component-icon"><img src="C:\Users\vscode\veb_design\images\kolo.svg" alt="CPU"></div>
+                    <h4>Процесори</h4>
+                    <span>124 товари</span>
+                </div>
+            </a>
+            <a href="catalog.html?category=gpu" style="display: block;">
+                <div class="component-card">
+                    <div class="component-icon"><img src="C:\Users\vscode\veb_design\images\kolo.svg" alt="GPU"></div>
+                    <h4>Відеокарти</h4>
+                    <span>82 товари</span>
+                </div>
+            </a>
+            <a href="catalog.html?category=motherboard" style="display: block;">
+                <div class="component-card">
+                    <div class="component-icon"><img src="C:\Users\vscode\veb_design\images\kolo.svg" alt="MB"></div>
+                    <h4>Материнські плати</h4>
+                    <span>115 товарів</span>
+                </div>
+            </a>
+            <a href="catalog.html?category=ram" style="display: block;">
+                <div class="component-card">
+                    <div class="component-icon"><img src="C:\Users\vscode\veb_design\images\kolo.svg" alt="RAM"></div>
+                    <h4>Оперативна пам'ять</h4>
+                    <span>184 товари</span>
+                </div>
+            </a>
+            <a href="catalog.html?category=ssd" style="display: block;">
+                <div class="component-card">
+                    <div class="component-icon"><img src="C:\Users\vscode\veb_design\images\kolo.svg" alt="SSD"></div>
+                    <h4>Накопичувачі</h4>
+                    <span>212 товарів</span>
+                </div>
+            </a>
+            <a href="catalog.html?category=psu" style="display: block;">
+                <div class="component-card">
+                    <div class="component-icon"><img src="C:\Users\vscode\veb_design\images\kolo.svg" alt="PSU"></div>
+                    <h4>Блоки живлення</h4>
+                    <span>67 товарів</span>
+                </div>
+            </a>
+            <a href="catalog.html?category=case" style="display: block;">
+                <div class="component-card">
+                    <div class="component-icon"><img src="C:\Users\vscode\veb_design\images\kolo.svg" alt="Case"></div>
+                    <h4>Корпуси</h4>
+                    <span>74 товари</span>
+                </div>
+            </a>
+            <a href="catalog.html?category=cooling" style="display: block;">
+                <div class="component-card">
+                    <div class="component-icon"><img src="C:\Users\vscode\veb_design\images\kolo.svg" alt="Cooling"></div>
+                    <h4>Охолодження</h4>
+                    <span>101 товар</span>
+                </div>
+            </a>
+        </section>
+
+        <!-- Готові збірки -->
+        <h2 class="section-title">Готові збірки</h2>
+        <section class="prebuilts-grid">
+            <!-- Збірка 1 -->
+            <div class="prebuilt-card">
+                <div class="prebuilt-img">
+                    <img src="C:\Users\vscode\veb_design\images\start.jpg" alt="NexPC Start">
+                </div>
+                <div class="prebuilt-info">
+                    <h3>NexPC Start</h3>
+                    <ul class="prebuilt-specs">
+                        <li>• Ryzen 5 5600</li>
+                        <li>• RTX 4060 8GB</li>
+                        <li>• 16GB RAM</li>
+                        <li>• 1TB M.2 SSD</li>
+                    </ul>
+                    <div class="prebuilt-footer">
+                        <span class="prebuilt-price">28 300 ₴</span>
+                        <!-- Замінено на тег <a> для переходу до оформлення -->
+                        <a href="checkout.html?product=start" class="btn btn-primary">Купити</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Збірка 2 -->
+            <div class="prebuilt-card">
+                <div class="prebuilt-img">
+                    <img src="C:\Users\vscode\veb_design\images\gamer.jpg" alt="NexPC Gamer">
+                </div>
+                <div class="prebuilt-info">
+                    <h3>NexPC Gamer</h3>
+                    <ul class="prebuilt-specs">
+                        <li>• Ryzen 5 7500F</li>
+                        <li>• RTX 4060 Ti 8GB</li>
+                        <li>• 32GB DDR5</li>
+                        <li>• 1TB M.2 SSD</li>
+                    </ul>
+                    <div class="prebuilt-footer">
+                        <span class="prebuilt-price">56 500 ₴</span>
+                        <a href="checkout.html?product=gamer" class="btn btn-primary">Купити</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Збірка 3 -->
+            <div class="prebuilt-card">
+                <div class="prebuilt-img">
+                    <img src="C:\Users\vscode\veb_design\images\pro.jpg" alt="NexPC Pro">
+                </div>
+                <div class="prebuilt-info">
+                    <h3>NexPC Pro</h3>
+                    <ul class="prebuilt-specs">
+                        <li>• Ryzen 7 7800X3D</li>
+                        <li>• RTX 4070 Ti SUPER</li>
+                        <li>• 64GB DDR5</li>
+                        <li>• 2TB M.2 SSD</li>
+                    </ul>
+                    <div class="prebuilt-footer">
+                        <span class="prebuilt-price">92 800 ₴</span>
+                        <a href="checkout.html?product=pro" class="btn btn-primary">Купити</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Відгуки клієнтів -->
+        <h2 class="section-title">Відгуки клієнтів</h2>
+        <section class="reviews-grid">
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="avatar">
+                        <img src="C:\Users\vscode\veb_design\images\avatar.svg" alt="Аватар Максима">
+                    </div>
+                    <strong>Максим В.</strong>
+                </div>
+                <p>Чудовий ПК, все літає. Доставили швидко, упаковка надійна. Рекомендую!</p>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="avatar">
+                        <img src="C:\Users\vscode\veb_design\images\avatar.svg" alt="Аватар Олега">
+                    </div>
+                    <strong>Олег Д.</strong>
+                </div>
+                <p>Збирав сам через конфігуратор, дуже зручно, що одразу показує сумісність.</p>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="avatar">
+                        <img src="C:\Users\vscode\veb_design\images\avatar.svg" alt="Аватар Андрія">
+                    </div>
+                    <strong>Андрій П.</strong>
+                </div>
+                <p>Купував готовий Start, для моїх задач вистачає з головою. Дякую.</p>
+            </div>
+        </section>
+
+        <!-- Call to Action Банер -->
+        <section class="cta-banner">
+            <div>
+                <h2>Готовий зібрати свій ПК?</h2>
+                <p>Переходь в конфігуратор — це займе кілька хвилин!</p>
+            </div>
+            <!-- Замінено на тег <a> -->
+            <a href="C:\Users\vscode\veb_design\empty\configurator.html" class="btn btn-white" style="display: inline-flex; align-items: center; justify-content: center;">Зібрати ПК</a>
+        </section>
+    </main>
+
+    <!-- Підвал сайту -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="C:\Users\vscode\veb_design\index.html" class="logo" style="margin-bottom: 16px;"><span>◆</span> NexPC</a>
+                <p class="footer-desc">Збираємо найкращі ПК для геймерів та професіоналів.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Каталог</h4>
+                <ul>
+                    <li><a href="catalog.html?category=components">Комплектуючі</a></li>
+                    <li><a href="C:\Users\vscode\veb_design\empty\prebuild.html">Готові збірки</a></li>
+                    <li><a href="catalog.html?category=peripherals">Периферія</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Інформація</h4>
+                <ul>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="delivery.html">Доставка і оплата</a></li>
+                    <li><a href="warranty.html">Гарантія</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Контакти</h4>
+                <ul>
+                    <li><a href="tel:+380000000000">+38 000 000 00 00</a></li>
+                    <li><a href="mailto:info@nexpc.ua">info@nexpc.ua</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
